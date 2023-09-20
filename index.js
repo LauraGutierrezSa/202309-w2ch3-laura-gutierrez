@@ -104,3 +104,9 @@ const getSongsByGenre = (songs, genre) => {
 
   return filteredSongs;
 };
+
+const getHitSongs = (songs) => {
+  const hitSongs = songs.filter((song) => song.wasItAHit === true);
+
+  return hitSongs;
+};
