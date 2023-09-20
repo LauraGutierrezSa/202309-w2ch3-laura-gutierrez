@@ -60,7 +60,10 @@ const songs = [
   },
 ];
 
-const addSongToSongsArray = (newSong) => songs.push(newSong);
+const addSongToSongsArray = (newSong) => {
+  songs.push(newSong);
+  return songs;
+};
 
 const newSong = {
   id: 7,
@@ -72,4 +75,14 @@ const newSong = {
   wasItAHit: false,
 };
 
-addSongToSongsArray(newSong);
+const deleteSongByTitle = (title) => {
+  songToDelete = songs.find(
+    (song) => song.title.toLowerCase === title.toLowerCase
+  );
+
+  let songToDeletePosition = songs.indexOf(songToDelete);
+
+  songs.splice(songToDeletePosition, 1);
+
+  return songs;
+};
