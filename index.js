@@ -118,3 +118,11 @@ const sortSongsByPublishingYear = (songs) => {
 
   return sortedSongs;
 };
+
+const getSongTitles = (songs) => {
+  const songTitles = songs.map((song) => song.title);
+
+  return songTitles;
+};
+
+console.log(getSongTitles(songs));
