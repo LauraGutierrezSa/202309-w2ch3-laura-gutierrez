@@ -86,3 +86,15 @@ const deleteSongByTitle = (title) => {
 
   return songs;
 };
+
+const getFullSong = (title) => {
+  const fullSong = songs.find(
+    (song) => song.title.toLowerCase() === title.toLowerCase()
+  );
+
+  let fullSongPosition = songs.indexOf(fullSong);
+
+  return songs[fullSongPosition];
+};
+
+console.log(getFullSong("Temple of Love"));
