@@ -97,4 +97,10 @@ const getFullSong = (title) => {
   return songs[fullSongPosition];
 };
 
-console.log(getFullSong("Temple of Love"));
+const getSongsByGenre = (songs, genre) => {
+  const filteredSongs = songs.filter(
+    (song) => song.genre.toLowerCase() === genre.toLowerCase()
+  );
+
+  return filteredSongs;
+};
