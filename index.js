@@ -110,3 +110,11 @@ const getHitSongs = (songs) => {
 
   return hitSongs;
 };
+
+const sortSongsByPublishingYear = (songs) => {
+  const sortedSongs = songs.toSorted(
+    (songA, songB) => songA.publishingYear - songB.publishingYear
+  );
+
+  return sortedSongs;
+};
