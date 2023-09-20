@@ -1,5 +1,6 @@
 const songs = [
   {
+    id: 1,
     title: "Smooth Criminal",
     artist: "Michael Jackson",
     genre: "R&B",
@@ -9,6 +10,7 @@ const songs = [
   },
 
   {
+    id: 2,
     title: "Heaven and Hell",
     artist: "Black Sabbath",
     genre: "Heavy Metal",
@@ -18,6 +20,7 @@ const songs = [
   },
 
   {
+    id: 3,
     title: "Temple of Love",
     artist: "Sisters of Mercy",
     genre: "Rock",
@@ -27,6 +30,7 @@ const songs = [
   },
 
   {
+    id: 4,
     title: "Forward",
     artist: "Anaal Nathrakh",
     genre: "Black Metal",
@@ -36,6 +40,7 @@ const songs = [
   },
 
   {
+    id: 5,
     title: "Kickapoo",
     artist: "Tenacious D",
     genre: "Rock",
@@ -45,6 +50,7 @@ const songs = [
   },
 
   {
+    id: 6,
     title: "Brother, my cup is empty",
     artist: "Nick Cave & The Bad Seeds",
     genre: "Rock",
@@ -57,6 +63,7 @@ const songs = [
 const addSongToSongsArray = (newSong) => songs.push(newSong);
 
 const newSong = {
+  id: 7,
   title: "My head is filled with music",
   artist: "The Real McKenzies",
   genre: "Punk",
